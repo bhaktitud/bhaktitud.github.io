@@ -1,0 +1,79 @@
+body {
+    background-color: peru;
+}
+
+table {
+    border: 5px solid #000000;
+}
+
+td {
+    border: 1px solid #000000;
+    text-align: center;
+    vertical-align: middle;  
+}
+
+input {
+    color: #000000;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    background-color: white;
+    outline: none;
+}
+
+input:disabled {
+    background-color: greenyellow;
+}
+
+input:hover {
+    color: red;
+}
+
+#menuBottom {
+    margin-top: 15px;
+    width: 495px;
+    text-align: center;
+}
+
+#main-section {
+    margin: 0 auto;
+    width: max-content;
+    height: 550px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+
+#game-title {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+#title-section {
+    background-color: gold;
+    border-radius: 10px;
+}
+
+#timer-section {
+    text-align: center;
+    font-size: 25px;
+}
+
+#footer {
+    background-color: black;
+    height: 30px;
+    margin-top: 150px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#info {
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
