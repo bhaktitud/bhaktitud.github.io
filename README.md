@@ -1,1 +1,3 @@
 # bhaktitud.github.io
+
+This puzzle game is still "buggy"...
