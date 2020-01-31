@@ -3,7 +3,32 @@ var interval;
 var newArr = []
 
 window.onload = function () {
-    boardReset()
+    // boardReset()
+    let count =0
+    console.log(shuffle())
+    let board = document.getElementsByClassName("cell")
+    let timer = document.getElementById("timer")
+    let startButton = document.getElementById("start")
+    let checkButton = document.getElementById("check")
+    let showResult = document.getElementById("showResult")
+    timer.textContent = 'Press Start'
+    for(let i = 0; i< board.length; i++){
+        if(i == 13 || i == 80 || i == 9 || i ==10 || i == 45 || i == 33 || i == 46){
+            board[i].value = newArr[i]
+            board[i].disabled = true
+        }else{
+            board[i].style.backgroundColor = "gray"
+            board[i].value =''
+            board[i].disabled = true
+        }
+    }
+
+    startButton.disabled = false
+    checkButton.disabled =false
+    showResult.disabled = true
+    clearInterval(interval)
+
+    return alert('Welcome to SUDOKU puzzle game!')
     
 }
 
