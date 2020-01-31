@@ -2,6 +2,12 @@
 var interval;
 var newArr = []
 
+window.onload = function () {
+    boardReset()
+    
+}
+
+
 function validateInput(event, input) {
     const value = event.target.value;
     // console.log(value);
@@ -56,6 +62,7 @@ function boardReset() {
             board[i].value = newArr[i]
             board[i].disabled = true
         }else{
+            board[i].style.backgroundColor = "gray"
             board[i].value =''
             board[i].disabled = true
         }
@@ -76,6 +83,7 @@ function gameStart() {
     for(let i=0; i< board.length; i++){
         if(board[i].value == ''){
             board[i].disabled =false
+            board[i].style.backgroundColor = 'white'
         }
     }
     interval = setInterval(countTime, 1000)
