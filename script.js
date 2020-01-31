@@ -164,7 +164,6 @@ function showResult() {
     }
 
     startButton.disabled = true
-    // checkButton.disabled = true
 
 
 }
