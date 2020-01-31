@@ -3,7 +3,7 @@ var interval;
 var newArr = []
 
 window.onload = function () {
-    // boardReset()
+    
     let count =0
     console.log(shuffle())
     let board = document.getElementsByClassName("cell")
